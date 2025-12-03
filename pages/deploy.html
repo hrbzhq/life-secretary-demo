@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>部署 — 生命小秘书</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>部署到 GitHub Pages</h1>
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="overview.html">概述</a>
+      <a href="mvp.html">MVP</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h2>快速步骤</h2>
+    <ol>
+      <li>在 GitHub 上新建仓库（例如：<code>life-secretary</code>）。</li>
+      <li>在本地将本文件夹作为仓库并推送到 GitHub（示例命令见下方）。</li>
+      <li>启用 GitHub Pages（或使用本仓库已包含的 Actions 自动部署）。</li>
+    </ol>
+    <h3>PowerShell 示例命令</h3>
+    <pre><code>cd "e:\\tools\\bigengs\\plan01-site"
+git init
+git add .
+git commit -m "Initial: Life Secretary demo site"
+git branch -M main
+# 在 GitHub 上创建仓库后替换下面的 URL
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
+</code></pre>
+    <p>推送后，GitHub Actions 会自动将站点发布到 Pages（如果启用了 Actions）。</p>
+  </main>
+  <footer class="site-footer">演示站</footer>
+</body>
+</html>

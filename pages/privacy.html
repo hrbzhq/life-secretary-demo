@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>隐私架构 — 生命小秘书</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>隐私架构</h1>
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="overview.html">概述</a>
+      <a href="mvp.html">MVP</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h2>本地优先 + 最小化上报</h2>
+    <p>建议架构：</p>
+    <ul>
+      <li>原始数据保存在用户本地或用户控制的云存储。</li>
+      <li>本地提取特征并脱敏后上报。</li>
+      <li>后台只接收可用来匹配知识图谱的“问题/特征”，无法还原原始数据。</li>
+    </ul>
+  </main>
+  <footer class="site-footer">演示站</footer>
+</body>
+</html>
